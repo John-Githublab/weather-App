@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body id="body">
+    <main>
+        <div class="row g-0">
+            <!-- main area that contain image contain and search area -->
+            <div
+                class="col-xs-12 col-lg-8 col-md-7  main__image-textcontainer p-5 d-flex flex-column  justify-content-between">
+                <!-- contains a background image and waeather data -->
+                <h4 class="main__title">The.weather</h4>
+                <div class="main__waetherdata d-flex gap-lg-5 gap-md-1 flex-md-column flex-lg-row">
+                    <h1><span class="main__degree"> 16 </span><span class="main__c">°</span></h1>
+                    <div class="main__place-timedate d-flex justify-content-center flex-column  ">
+                        <h1 class="main__place">London</h1>
+                        <p class="main__timedate">06:09-monday ,09 sep</p>
+                    </div>
+                    <div
+                        class="main__icon-forecast d-flex justify-content-center align-items-center align-items-md-start flex-column">
+                        <img src="http://cdn.weatherapi.com/weather/64x64/night/143.png" class="main__icon">
+                        <p class="main__forecast">cloudy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__datacontainer col-xs-12 col-lg-4 col-md-5  p-5">
+                <!-- search area and some famous country listed  -->
+
+                <input class="data__search " placeholder="Search location">
+                <hr class="">
+                <div class="data__flocation  my-4  d-flex flex-column gap-3 gap-xl-5 fw-light ">
+                    <h5 class="data__famousplace"> Birmingham</h5>
+                    <h5 class="data__famousplace"> New york</h5>
+                    <h5 class="data__famousplace"> California</h5>
+                    <h5 class="data__famousplace"> London</h5>
+
+                </div>
+                <hr>
+                <div class="data__weather-details text-white">
+                    <h4>Weather Details</h4>
+                    <div class="data__weather--update  mt-4">
+                        <p>Cloudy</p>
+                        <p id="cloudy">86%</p>
+                    </div>
+                    <div class="data__weather--update ">
+                        <p>Humidity</p>
+                        <p id="humidity">86%</p>
+                    </div>
+                    <div class="data__weather--update ">
+                        <p>Wind</p>
+                        <p id="wind">86%</p>
+                    </div>
+                    <div class="data__weather--update ">
+                        <p>Rain</p>
+                        <p id="rain">86%</p>
+                    </div>
+                </div>
+                <hr>
+
+
+            </div>
+        </div>
+
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1536244636800-a3f74db0f3cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=792&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s;
+  position: relative;
+}
+main {
+  position: relative;
+}
+.main__image-textcontainer {
+  height: 100vh;
+  padding-left: 18vh !important;
+  color: white;
+  padding-bottom: 4.75rem !important;
+}
+.main__datacontainer {
+  height: 100vh;
+  background: rgba(110, 110, 110, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  overflow: auto;
+}
+.main__degree,
+.main__c {
+  font-size: 6rem;
+}
+
+/* data area */
+.data__search {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  letter-spacing: 0.1rem;
+}
+.data__search:focus {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+.data__search::placeholder {
+  color: #ccc;
+}
+.data__flocation {
+  color: #ccc;
+}
+.data__famousplace {
+  cursor: pointer;
+  font-weight: 450 !important;
+}
+.data__weather--update {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+hr {
+  color: white;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+@media (max-width: 746px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    background-color: red !important;
+  }
+  .main__image-textcontainer {
+    height: 40vh !important ;
+    padding-left: 4.5rem !important;
+  }
+  .main__waetherdata {
+    gap: 2rem;
+  }
+}
